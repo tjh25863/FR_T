@@ -1,0 +1,85 @@
+# Python基本缓存
+__pycache__/
+*.py[cod]
+*.so
+*.ipynb_checkpoints/
+
+# 虚拟环境
+venv/
+env/
+.F*.py
+
+# VSCode
+.vscode/
+*.code-workspace
+
+# 数据与竞赛特定
+data/
+datasets/
+dataset/
+raw_data/
+input/
+output/
+
+# 模型与预测结果
+models/
+checkpoints/
+*.pth
+*.pt
+*.ckpt
+*.bin
+results/
+submission.csv
+submission.zip
+
+# 日志与可视化
+logs/
+*.log
+tb_events/
+runs/
+events.out.tfevents.*
+
+# 临时文件
+*.swp
+*.swo
+*.bak
+*.tmp
+*.temp
+.DS_Store
+
+# 系统 & macOS
+Thumbs.db
+.DS_Store
+
+# Jupyter Notebook相关
+.ipynb_checkpoints/
+*.ipynb
+
+# 工具缓存
+.lektorproject
+*.sqlite3
+
+# HuggingFace和其他缓存
+huggingface/
+*.cache/
+*.huggingface/
+tokenizers/
+tokenizer_cache/
+transformers_cache/
+
+# 个人/隐私
+*.key
+*.pem
+*.crt
+*.env
+.env.*
+!env.example
+
+# 其他不需要版本控制的内容
+nohup.out
+*.onnx
+*.npz
+*.csv
+*.xlsx
+*.pkl
+*.npy
