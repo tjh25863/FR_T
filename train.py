@@ -12,7 +12,7 @@ AI Competition Coach - Flower Recognition Challenge Training v1.1.0
 7. 🛡️ 更强的错误处理和恢复
 
 使用方法:
-python train.py --config config_optimized.json --epochs 10
+python train.py --config config.json --epochs 10
 """
 
 import os
@@ -397,7 +397,7 @@ class OptimizedTrainer:
 def main():
     """主函数"""
     parser = argparse.ArgumentParser(description='花卉识别训练脚本 - 优化版')
-    parser.add_argument('--config', type=str, default='config_optimized.json',
+    parser.add_argument('--config', type=str, default='config.json',
                        help='配置文件路径')
     parser.add_argument('--epochs', type=int, help='训练轮数 (覆盖配置)')
     parser.add_argument('--batch_size', type=int, help='批次大小 (覆盖配置)')

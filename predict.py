@@ -11,7 +11,7 @@ AI Competition Coach - Flower Recognition Challenge Prediction v1.1.0
 6. 🛡️ 错误处理和恢复机制
 
 使用方法:
-python predict.py --config config_optimized.json --model_path models/best_model.pth --test_dir data/test_images --output results/submission.csv --use_tta
+python predict.py --config config.json --model_path models/best_model.pth --test_dir data/test_images --output results/submission.csv --use_tta
 """
 
 import os
@@ -407,7 +407,7 @@ class OptimizedPredictor:
 def main():
     """主函数"""
     parser = argparse.ArgumentParser(description='花卉识别预测脚本 - 优化版')
-    parser.add_argument('--config', type=str, default='config_optimized.json',
+    parser.add_argument('--config', type=str, default='config.json',
                        help='配置文件路径')
     parser.add_argument('--model_path', type=str, required=True,
                        help='训练好的模型权重路径')
